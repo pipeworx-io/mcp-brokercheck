@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-brokercheck",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "FINRA BrokerCheck MCP — individual broker / adviser and firm disciplinary lookup",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-c956cfa2f210fe7c56e5f04a18e318f92139bafd11adac86b38e452495f7c6cf",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "sourceHash": "v1-8c9b0e85b6e3f68a55e34f98784d00b199e671d97b0fb4478520e8a839605f7e",
+    "sourceCommit": "babdd280d475dceddecc9ebf8f2a661712781a81"
   }
 }
