@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-brokercheck",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "FINRA BrokerCheck MCP — individual broker / adviser and firm disciplinary lookup",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-brokercheck": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "brokercheck"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-brokercheck.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/brokercheck",
   "pipeworx": {
-    "sourceHash": "v1-505b5ce42bddc1a940e926dd5d2fa3ffaf8e8c59299745cf5187d262231edef2",
-    "sourceCommit": "70a4e816a9195016cd4af92dca2019485d4c3865"
+    "mode": "gateway",
+    "slug": "brokercheck",
+    "gatewaySlug": "brokercheck",
+    "sourceHash": "v1-ba06c18ad6d8d27313e30e52a8feeaff6ab11677932992ad200dd1c9bffb5b14",
+    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
   }
 }
